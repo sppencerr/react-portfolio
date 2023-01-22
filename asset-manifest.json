@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.4d642bc8.css",
+    "main.js": "/react-portfolio/static/js/main.6437c9cf.js",
+    "static/media/profilePicture.png": "/react-portfolio/static/media/profilePicture.90e7fde786541c352565.png",
+    "static/media/weatherForecast.png": "/react-portfolio/static/media/weatherForecast.eec75b9a17df78a0eb1f.png",
+    "static/media/dayAtGlance.png": "/react-portfolio/static/media/dayAtGlance.63723020deb025a9a1a3.png",
+    "static/media/passwordGenerator.png": "/react-portfolio/static/media/passwordGenerator.0ca2b47f55ebdc67bfbe.png",
+    "static/media/timeManager.png": "/react-portfolio/static/media/timeManager.845f3e9db8dc8cbc4e4e.png",
+    "static/media/javascriptQuiz.png": "/react-portfolio/static/media/javascriptQuiz.70477235ce2b7a52d52d.png",
+    "static/media/graphql.png": "/react-portfolio/static/media/graphql.fc6b9451733c620ceb86.png",
+    "static/media/react.png": "/react-portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/nextjs.png": "/react-portfolio/static/media/nextjs.48ddc8121a0fcb543d64.png",
+    "static/media/html.png": "/react-portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/react-portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/react-portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/react-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/java3.png": "/react-portfolio/static/media/java3.6c64373d3b7415758078.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.4d642bc8.css.map": "/react-portfolio/static/css/main.4d642bc8.css.map",
+    "main.6437c9cf.js.map": "/react-portfolio/static/js/main.6437c9cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d642bc8.css",
+    "static/js/main.6437c9cf.js"
+  ]
+}
