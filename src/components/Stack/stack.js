@@ -1,55 +1,93 @@
-import React from 'react';
+import React from "react";
 
-const LanguageList = () => {
+import html from "../../img/html.png";
+import css from "../../img/css.png";
+import javascript from "../../img/javascript.png";
+import reactImage from "../../img/react.png";
+import nextjs from "../../img/nextjs.png";
+import graphql from "../../img/graphql.png";
+import tailwind from "../../img/tailwind.png";
+import java from "../../img/java3.png"
+
+const Stack = () => {
+  const techs = [
+    {
+      id: 1,
+      src: html,
+      title: "HTML",
+      style: "shadow-orange-500",
+    },
+    {
+      id: 2,
+      src: css,
+      title: "CSS",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 3,
+      src: javascript,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
+    },
+    {
+      id: 4,
+      src: reactImage,
+      title: "React",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 5,
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 6,
+      src: nextjs,
+      title: "Next JS",
+      style: "shadow-white",
+    },
+    {
+      id: 7,
+      src: graphql,
+      title: "GraphQL",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 8,
+      src: java,
+      title: "Java",
+      style: "shadow-sky-600",
+    },
+  ];
+
   return (
-    <section id="languages">
-      <div className="container">
-        <div className="row">
-          <h1 className="section__title">
-            These are the <span className="text--magenta">Languages</span> I work with
-          </h1>
-          <div className="language__list">
-            <div className="language">
-              <figure className="language__img--wrapper">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="Html Logo" className="language__img" />
-              </figure>
-              <span className="language__name">HTML</span>
-            </div>
-            <div className="language">
-              <figure className="language__img--wrapper">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo" className="language__img" />
-              </figure>
-              <span className="language__name">CSS</span>
-            </div>
-            <div className="language">
-              <figure className="language__img--wrapper">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo" className="language__img" />
-              </figure>
-              <span className="language__name">JavaScript</span>
-            </div>
-            <div className="language">
-              <figure className="language__img--wrapper">
-                <img src="./assets/Images/python.png" alt="Pythong Logo" className="language__img" />
-              </figure>
-              <span className="language__name">Python</span>
-            </div>
-            <div className="language">
-              <figure className="language__img--wrapper">
-                <img src="./assets/Images/kisspng-node-js-javascript-npm-computer-icons-web-applicat-5ae0f85a3ac1c4.3592483215246930822407.png" alt="Pythong Logo" className="language__img" />
-              </figure>
-              <span className="language__name">Node</span>
-            </div>
-            <div className="language">
-              <figure className="language__img--wrapper">
-                <img src="./assets/Images/kisspng-microsoft-azure-sql-database-microsoft-sql-server-database-5abeaece9df699.271102961522446030647.png" alt="Pythong Logo" className="language__img" />
-              </figure>
-              <span className="language__name">SQL</span>
-            </div>
-          </div>
+    <div
+      name="Stack"
+      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+    >
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+        <div>
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+            Stack
+          </p>
+          <p className="py-6">These are the technologies I've worked with</p>
         </div>
-        </div>
-        </section>
-      );
-      }
 
-      export default LanguageList;
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+          {techs.map(({ id, src, title, style }) => (
+            <div
+              key={id}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            >
+              <img src={src} alt="" className="w-20 mx-auto" />
+              <p className="mt-4">{title}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Stack;

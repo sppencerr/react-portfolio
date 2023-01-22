@@ -1,36 +1,78 @@
-import React from 'react';
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
-  return (
-    <body background="./assets/Images/aquablueBackground.jpeg">
-      <section id="personal-info">
-        <nav>
-          <div className="website__creator">Spencer Gerritsen</div>
-          <ul className="navbar__link--list">
-            <li className="navbar__link">
-              <a href="#languages" className="
-                navbar__link--anch
-                link__hover-effect
-                link__hover-effect--black
-              ">Languages</a>
-            </li>
-            <li className="navbar__link">
-              <a href="#projects" className="
-                navbar__link--anch
-                link__hover-effect
-                link__hover-effect--black
-              ">Projects</a>
-            </li>
-            <li className="navbar__link">
-              <a href="mailto:spencergerritsen@gmail.com" className="
-                navbar__link--anch
-                navbar__link--anch-main">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </body>
-  );
-}
+const [nav, setNav] = useState(false);
+
+const links = [
+{
+id: 1,
+link: "Homepage",
+},
+{
+id: 2,
+link: "Personal",
+},
+{
+id: 3,
+link: "Projects",
+},
+{
+id: 4,
+link: "Stack",
+},
+
+];
+
+return (
+<div className="flex justify-between items-center w-full h-20 px-4 bg-gradient-to-b from-gray-800 to-sky-900">
+<div>
+<h1 className="text-5xl font-signature ml-2 text-transparent bg-clip-text bg-gradient-to-r from-black to-white">Spencer Gerritsen</h1>
+</div>
+
+
+  <ul className="hidden md:flex">
+    {links.map(({ id, link }) => (
+      <li
+        key={id}
+        className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
+      >
+        <Link to={link} smooth duration={500}>
+          {link}
+        </Link>
+      </li>
+    ))}
+  </ul>
+
+  <div
+    onClick={() => setNav(!nav)}
+    className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+  >
+    {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+  </div>
+
+  {nav && (
+    <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-sky-400 to-blue-900 text-gray-500">
+      {links.map(({ id, link }) => (
+        <li
+          key={id}
+          className="px-4 cursor-pointer capitalize py-6 text-4xl"
+        >
+          <Link
+            onClick={() => setNav(!nav)}
+            to={link}
+            smooth
+            duration={500}
+          >
+            {link}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )}
+</div>
+);
+};
 
 export default NavBar;
