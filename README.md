@@ -1,4 +1,4 @@
-# Minka - Developers notes and questions forum
+# React Portfolio
   [![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://lbesson.mit-license.org/)
   ## Table of Contents
   * [Description](#description)
@@ -29,6 +29,5 @@
 Any questions about the project?
 Github: https://github.com/sppencerr
 Email: spencergerritsen@gmail.com
-## Credits <a name="credits"></a>
-Minka
+
 
