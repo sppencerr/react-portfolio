@@ -12,7 +12,12 @@
 
   ## Description <a name="description"></a>
   This is my Portfolio made with React.js
-  ![homepage](./public/images/homepage.png)
+  ![homepage](./src/img/readme/homepage.png)
+  ![personal info](./src/img/readme/personal.png)
+  ![projects](./src/img/readme/projects.png)
+  ![stack](./src/img/readme/stack.png)
+  Here is the mobile hamburger option
+  ![mobile](./src/img/readme/mobile.png)
 ## Installation <a name="installation"></a>
  git clone code or download repo as a zip
 ## Usage <a name="usage"></a>
